@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/handbookcss.min.css">
+  <title>Table</title>
+</head>
+
+<body>
+
+  <h1>Таблица CSS-стилей</h1>
+  <div class="table_all">
+    <table>
+      <tr>
+        <th colspan="3">Мой электронний справочник</th>
+      </tr>
+
+      <tr>
+        <td>Применение</td>
+        <td>Назва свойства</td>
+        <td>Краткое описание</td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">СВОЙСТВА ШРИФТА</td>
+        <td>font-family</td>
+        <td>Используется для указания шрифта или шрифтового семейства, которым будет отображаться элемент.
+          P {font-family: Times New Roman, sans-serif;}</td>
+      </tr>
+      <tr>
+        <td>font-style</td>
+        <td>Задает способ начертания шрифта: normal - Нормальный (по умолчанию), italic - Курсив, oblique - Наклонный.
+          P {font-style: italic;}</td>
+      </tr>
+      <tr>
+        <td>font-weight</td>
+        <td>Определяет степень жирности шрифта с помощью параметров: normal, bold, bolder, lighter, 100, 200, 300, 400,
+          500, 600, 700, 800, 900
+          B {font-weight: bolder;}</td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td> Устанавливает размер шрифта. Параметр может указываться как в относительной (проценты), так и абсолютной
+          величине (пункты, пикселы, сантиметры)
+          H1 {font-size: 200%;}
+          H2 {font-size: 150px;}
+          H3 {font-size: 400pt;}</td>
+      </tr>
+      <tr>
+        <td rowspan="4">ЦВЕТ ЭЛЕМЕНТА И ЦВЕТ ФОНА</td>
+        <td>color</td>
+        <td> Определяет цвет элемента
+          I {color: green;}</td>
+      </tr>
+      <tr>
+        <td>background-color</td>
+        <td>Устанавливает цвет фона для элемента – именно для элемента, а не для странички. Разные броузеры отображают
+          это свойство по-разному: Microsoft IE отводит под фон элемента всю доступную ширину страницы, а Netscape
+          Navigator – лишь ширину,
+          занимаемую этим элементом.
+          H4 {background-color: yellow;}
+          В скриптовых языках используйте object.style.backgroundColor [ = sColor ]</td>
+      </tr>
+      <tr>
+        <td>background-image</td>
+        <td>
+          Устанавливает или получает фоновый рисунок для элемента
+          Может принимать значения
+          none - По умолчанию. Используется цвет родительского объекта
+          Url - Задается абсолютный или относительный путь к рисунку
+          H3 {background-image: yellow;}
+          В скриптовых языках используйте object.style.backgroundImage [ = sLocation ]</td>
+      </tr>
+      <tr>
+        <td>background-attachment</td>
+        <td align="center">Устанавливает или получает поведение фонового рисунка для элемента
+          Может принимать значения
+          scroll - По умолчанию. Фоновый рисунок прокручивается вместе с элементом
+          fixed - Фоновый рисунок не прокручивается вместе с элементом
+          body {background-attachment: fixed;}
+          В скриптовых языках используйте object.style.backgroundAttachment [ = sAttachment ]</td>
+      </tr>
+      <tr>
+        <td rowspan="6">СВОЙСТВА ТЕКСТА</td>
+        <td>text-decoration</td>
+        <td>Устанавливает эффекты оформления шрифта, такие, как подчеркивание или зачеркнутый текст
+
+          H4 {text-decoration: underline;} - подчеркивание
+          A {text-decoration: none;} - стандартный текст
+          I {text-decoration: line-through;} - зачеркивание
+          B {text-decoration:overline;} - надчеркивание</td>
+      </tr>
+      <tr>
+        <td>text-transform</td>
+        <td>Задает преобразование регистра текста при отображении
+
+          H4 {text-transform: capitalize;} - Первая буква каждого слова преобразуется в заглавную
+          A {text-transform: uppercase;} - Все буквы преобразуются в заглавные
+          I {text-transform: lowercase;} - Все буквы преобразуются в строчные
+          B {text-decoration:none;} - Отменяет установленные преобразования</td>
+      </tr>
+      <tr>
+        <td>word-spacing</td>
+        <td> Устанавливает интервалам между словами. Можно использовать отрицательные значения
+          P {word-spacing: 50 %}</td>
+      </tr>
+      <tr>
+        <td>text-align</td>
+        <td> Определяет выравнивание элемента. Возможные значения: left, right, center, justify
+          P {text-align:justify}
+          H5 {text-align: center}</td>
+      </tr>
+      <tr>
+        <td>text-indent</td>
+        <td> Устанавливает отступ первой строки текста. Чаще всего используется для создания параграфов с
+          табулированной первой строкой.
+          P {text-indent: 50pt;}</td>
+      </tr>
+      <tr>
+        <td>line-height</td>
+        <td>Управляет интервалами между строками текста.
+          P {line-height: 50 %}</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Границы</td>
+        <td>border-width</td>
+        <td>Ширина границы. Может быть задана значением в пикселях или с помощью зарезервированных слов thin (тонкая),
+          medium (средняя), thick (толстая).
+          table {border-width: 2px;}
+        </td>
+      </tr>
+      <tr>
+        <td>border-color </td>
+        <td>Цвет границы. Может принимать значение transparent для задания невидимой, но имеющей ширину, границы, что
+          иногда полезно
+          table {border-color: green;}</td>
+      </tr>
+      <tr>
+        <td>border-style </td>
+        <td>Задает стиль рисования границы. Может принимать следующие значения: none (по умолчанию), hidden, dotted,
+          dashed, solid, double,groove, ridge, inset, outset
+          table {border-style: dashed;}
+          table {border-style: groove;}</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Для гіперпосилань</td>
+        <td>margin</td>
+        <td>Задает или получает ширину отступа от четырех сторон объекта
+          H4 {margin:1cm;}
+          body {margin:5mm;}</td>
+      <tr>
+        <td>padding </td>
+        <td> Задает или получает величину пространтства, вставляемого между объектом и его отступом или, если объект
+          имеет границы, между объектом и его границей
+          td {padding:2cm;}</td>
+      </tr>
+      </tr>
+
+      <td rowspan="6">Псевдо-элементы</td>
+      <td>:first-letter</td>
+      <td>Устанавливает стили для первой буквы объекта</td>
+      </tr>
+      <tr>
+        <td>:first-line</td>
+        <td>Устанавливает стили для первой строки объекта</td>
+      </tr>
+      <tr>
+        <td>:hover </td>
+        <td> Устанавливает стили для элемента, когда пользователь подводит курсор мыши к ссылке. Данный псевдокласс
+          часто используется вместе с псевдоклассами :active, :link и :visited</td>
+      </tr>
+      <tr>
+        <td>:active</td>
+        <td> Устанавливает стили для элемента, когда ссылка становится активной, но переход по ссылке еще не совершен.
+          Данный псевдокласс часто используется вместе с псевдоклассами :hover, :link и :visited</td>
+      </tr>
+      <tr>
+        <td>:link</td>
+        <td> Устанавливает стили для элемента, когда ссылка не является часто посещаемой. Данный псевдокласс часто
+          используется вместе с псевдоклассами :hover, :active и :visited</td>
+      </tr>
+      <tr>
+        <td>:visited</td>
+        <td>Устанавливает стили для элемента, когда ссылка недавно посещалась. Данный псевдокласс часто используется
+          вместе с псевдоклассами :hover, :active и :link. (Используйте данный псевдокласс перед ними, чтобы не
+          подавлять их поведение)</td>
+      </tr>
+      <tr>
+
+
+    </table>
+  </div>
+
+
+</body>
+
+</html>

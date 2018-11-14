@@ -1,0 +1,126 @@
+body {
+    background: rgb(146, 140, 140);
+}
+
+header {
+    background-color: rgb(70, 167, 167);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.head p {
+    color: rgb(110, 75, 75);
+    list-style-type: none;
+    font-weight: 900;
+    font-size: 30px;
+    margin: 1px;
+    padding-top: 9px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+    margin: 10px;
+
+}
+
+main p {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item_1 {
+    background-color: rgb(149, 173, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 20%;
+
+}
+
+.item_1 a {
+    text-decoration: none;
+}
+
+.name p {
+    font-size: 20px;
+    color: crimson;
+}
+
+.item_2 {
+    background-color: rgb(127, 79, 167);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 20%;
+
+}
+
+.item_2 p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.item_2 a {
+    text-decoration: none;
+}
+
+.item_3 {
+    background-color: rgb(49, 115, 117);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 20%;
+}
+
+.item_3 a {
+    text-decoration: none;
+}
+
+.item_4 {
+    background-color: darkgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 20%;
+
+}
+
+.item_4 a {
+    text-decoration: none;
+}
+
+.imges img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+
+}
+
+footer {
+    background-color: rgb(190, 162, 33);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.foot p {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+    color: blueviolet;
+}
